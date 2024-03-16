@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import "./components/index.css";
+
+:root {
+  --gray-black: #2c2c2c;
+  --gray: #333333;
+  --white: #FFFFFF;
+  --black: #000000;
+
+  --font-3xl: 2.488125rem;
+  --font-2xl: 2.07375rem;
+  --font-xl: 1.728125rem;
+  --font-lg: 1.44rem;
+  --font-md: 1.2rem;
+  --font-default: 1rem;
+  --font-sm: 0.833125rem;
+  --font-xs: 0.694375rem;
+  --font-2xs: 0.57875rem;
+}
+
+* {
+  scrollbar-color: var(--gray-black) var(--gray);
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--font-default);
+  box-sizing: border-box;
+  text-decoration: none;
+  user-select: none;
+  border-width: 0;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--gray);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--gray-black);
+}
+
+body {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  min-height: 100dvh;
+  max-width: 100dvw;
+  background: url(/img/background.jpeg) no-repeat 50% fixed;
+  background-size: cover;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  max-width: 100dvw;
+  color: var(--white);
+  min-height: calc(100vh - 180px);
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  * {
+    font-size: var(--font_sm);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

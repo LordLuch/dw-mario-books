@@ -1,0 +1,14 @@
+button {
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+}
+
+button>p {
+  color: var(--black);
+}

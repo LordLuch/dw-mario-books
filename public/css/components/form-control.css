@@ -1,0 +1,31 @@
+.form-control {
+  position: relative;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--gray);
+  color: var(--white);
+  padding: 15px 0;
+  display: block;
+  font-size: 18px;
+  width: 100%;
+  transition: 0.1s ease-in;
+}
+
+.form-control input:focus+label,
+.form-control input:valid+label {
+  transform: translateY(-30px);
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

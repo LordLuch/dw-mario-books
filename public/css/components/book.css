@@ -1,0 +1,10 @@
+.book {
+  background-color: var(--gray-black);
+  align-items: center;
+  width: 30%;
+  display: flex;
+  gap: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  flex-direction: column;
+}
