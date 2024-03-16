@@ -1,5 +1,10 @@
 {
   "exec": "node index.js",
-  "watch": ["models", "views"],
-  "ext": "js"
+  "watch": [
+    "models",
+    "views",
+    "public",
+    "./index.js"
+  ],
+  "ext": "mjs,js,cjs,json,css,handlebars"
 }
