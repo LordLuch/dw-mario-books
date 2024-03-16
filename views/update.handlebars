@@ -1,5 +1,14 @@
 {{#if book}}
-  <form action="/book/{{id}}" method="post">
-    <input type="text" name="" value="{{}}">
-  </form>
-{{/fi}}
+<form action="/book/{{book.id}}" method="post">
+  <link rel="stylesheet" href="/css/cu.css">
+  <div class="form-control">
+    <input type="text" name="title" value="{{book.title}}" required />
+    <label>Título</label>
+  </div>
+  <div class="form-control">
+    <input type="text" name="author" value="{{book.author}}" required />
+    <label>Autor</label>
+  </div>
+  <button type="submit">Atualizar</button>
+</form>
+{{/if}}

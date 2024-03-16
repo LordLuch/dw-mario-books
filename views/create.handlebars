@@ -1,5 +1,12 @@
 <form action="/book" method="POST">
-  <input type="text" name="title" />
-  <input type="text" name="author" />
+  <link rel="stylesheet" href="/css/cu.css">
+  <div class="form-control">
+    <input type="text" name="title" required />
+    <label>Título</label>
+  </div>
+  <div class="form-control">
+    <input type="text" name="author" required />
+    <label>Autor</label>
+  </div>
   <button type="submit">Adicionar livro à lista</button>
 </form>
